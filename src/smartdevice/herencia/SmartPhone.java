@@ -1,0 +1,27 @@
+package smartdevice.herencia;
+
+import smartdevice.SmartDevice;
+
+public class SmartPhone extends SmartDevice {
+
+    String color;
+    String phoneBrand;
+    int centimeters;
+
+    public SmartPhone() {}
+
+    public SmartPhone(String color, String phoneBrand, int centimeters) {
+        this.color = color;
+        this.phoneBrand = phoneBrand;
+        this.centimeters = centimeters;
+    }
+
+    @Override
+    public String toString() {
+        return "SmartPhone{" +
+                "color='" + color + '\'' +
+                ", phoneBrand='" + phoneBrand + '\'' +
+                ", centimeters=" + centimeters +
+                '}';
+    }
+}
